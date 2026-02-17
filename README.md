@@ -6,7 +6,7 @@
 
 *Create beautiful, feature-rich Discord embeds with custom URLs, analytics, and infinite possibilities*
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/yourusername/webembed)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/ryxu-xo/WebEmbed-Advanced)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
@@ -505,13 +505,14 @@ npm run dev
 | [SELFBOT-GUIDE.md](SELFBOT-GUIDE.md) | Discord selfbot integration |
 | [SELFBOT-QUICKSTART.md](SELFBOT-QUICKSTART.md) | Selfbot quick start |
 | [SELFBOT-TAGALOG.md](SELFBOT-TAGALOG.md) | Tagalog selfbot guide |
+| [RENDER-DEPLOY.md](RENDER-DEPLOY.md) | **Deploy to Render (FREE!)** |
 | [WINDOWS-FIX.md](WINDOWS-FIX.md) | Windows installation fix |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 
 ## 💬 Support & Community
 
-- 🐛 **Found a bug?** [Open an issue](https://github.com/yourusername/webembed/issues)
-- 💡 **Have an idea?** [Start a discussion](https://github.com/yourusername/webembed/discussions)
+- 🐛 **Found a bug?** [Open an issue](https://github.com/ryxu-xo/WebEmbed-Advanced/issues)
+- 💡 **Have an idea?** [Start a discussion](https://github.com/ryxu-xo/WebEmbed-Advanced/discussions)
 - 📧 **Need help?** Check the docs above or open an issue
 - ⭐ **Like the project?** Give us a star on GitHub!
 
@@ -815,7 +816,58 @@ Want to use embeds with Discord selfbots? Check out [SELFBOT-GUIDE.md](SELFBOT-G
 - Complete selfbot example with commands
 
 ⚠️ **Warning**: Using selfbots violates Discord's Terms of Service. Use at your own risk.
+---
 
+## 🐳 Docker Deployment
+
+### Quick Start with Docker Compose
+
+```bash
+# Build and run
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+### Using Docker Manually
+
+```bash
+docker build -t webembed-advanced .
+docker run -p 3000:3000 -v $(pwd)/data:/app/data webembed-advanced
+```
+
+---
+
+## ☁️ Cloud Deployment
+
+### 🎉 Deploy to Render (FREE!)
+
+Render offers free hosting with SSL, monitoring, and zero configuration!
+
+**Quick Steps**:
+1. Push code to GitHub
+2. Connect to [Render](https://dashboard.render.com/)
+3. Create new Web Service
+4. Deploy! ✨
+
+**📖 Full Guide**: **[RENDER-DEPLOY.md](RENDER-DEPLOY.md)**
+
+**Includes**:
+- Step-by-step deployment
+- Environment configuration
+- Database persistence
+- Custom domains
+- Troubleshooting
+
+### Other Platforms
+
+Also works on Railway, Heroku, DigitalOcean, Vercel, and more!
+
+---
 ## �🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
